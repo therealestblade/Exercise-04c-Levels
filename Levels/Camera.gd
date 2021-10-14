@@ -9,7 +9,7 @@ func _process(_delta):
 	if player == null:
 		player = get_node("/root/Game/Player_Container/Player")
 	if player != null:
-		position = player.position
+		player = player
 
 func _physics_process(_delta):
 	var vtrans = get_canvas_transform()
